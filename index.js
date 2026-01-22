@@ -1,7 +1,7 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const app = express()
-const PORT = 3000 // ngrok http 3000
+const PORT = 4001 // ngrok http 4001
 app.use(bodyParser.json())
 
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`))

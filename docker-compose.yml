@@ -1,0 +1,12 @@
+services:
+  webhook-handler:
+    build: .
+    container_name: stalker-webhook-handler
+    restart: always
+    ports:
+      - "4001:4001"
+    networks:
+      - event-stalker-network
+
+networks:
+  - event-stalker-network:
